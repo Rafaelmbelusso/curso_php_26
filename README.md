@@ -7,5 +7,6 @@ git clone LINK_GITHUB da um enter file open folder: seleciona tudo e apaga.
 
 - /var/www/html/info_php_25 e da um ok terminal novo terminal verifica se esta em: /var/www/html/curso_php_26
 
-- Replicar/Salvar informações no github, **git add .**
+- Replicar/Salvar informações no github: git add . ou (nome do arquivo)
 
+- Para fazer o commit: git commit -m "(comit)"
