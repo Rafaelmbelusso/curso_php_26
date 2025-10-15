@@ -44,9 +44,9 @@ git clone LINK_GITHUB da um enter file open folder: seleciona tudo e apaga.
 
 - Operador de junção de partes: . ---> $aviao123 = "teste" **.** $aviao456 = "teste2" 
 
-- Quebra de linha: <br> ---> echo "<br>";
+- Quebra de linha: <(br)> ---> echo **"<(br)>"** (sem (teste))
 
-- Espaçamentos a mais:  ---> echo "teste é &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; aaaaaaa";
+- Espaçamentos a mais:  ---> echo "teste é **(&nbsp;)** testador"; (sem (teste))
 
 
 
