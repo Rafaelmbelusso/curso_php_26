@@ -46,7 +46,7 @@ git clone LINK_GITHUB da um enter file open folder: seleciona tudo e apaga.
 
 - Quebra de linha: <(br)> ---> echo **"<(br)>"** (sem (teste))
 
-- Espaçamentos a mais:  ---> echo "teste é **(&nbsp;)** testador"; (sem (teste))
+- Espaçamentos a mais:  ---> echo "teste é **(&-n-b-s-p;)** testador"; (sem (teste) e - - -)
 
 
 
