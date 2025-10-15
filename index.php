@@ -1,4 +1,7 @@
+# TESTES VALORES ARITMETICOS
+
 <?php
+
 
 $aviao;
 
@@ -44,7 +47,7 @@ echo "Os valores são: $valor1, $valor2, $valor3, $valor5, $valor6";
 echo "<br>";
 echo "<br>";
 
-echo "As somas totais são: &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; " . $soma + $subtracao + $calculo;
+echo "As somas totais são: &nbsp;&nbsp;&nbsp" . $soma + $subtracao + $calculo;
 
 
 
