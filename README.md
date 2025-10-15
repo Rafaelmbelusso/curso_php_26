@@ -13,6 +13,8 @@ git clone LINK_GITHUB da um enter file open folder: seleciona tudo e apaga.
 
 - Sincronizar para o GitHub: **git push**
 
+- Ativar localhost/apache no terminal: **sudo service apache2 start**
+
 
 # INFORMAÇÕES VSCODE
 
