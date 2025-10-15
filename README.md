@@ -18,6 +18,18 @@ git clone LINK_GITHUB da um enter file open folder: seleciona tudo e apaga.
 
 # INFORMAÇÕES VSCODE
 
+- Negrito: **  ** 
+
+- Itálico: *  *
+
+- Link ou âncora: (https:123123123)
+
+- Badges no github: Badges.io
+
+- Testes PHP: teh Playground
+
+- Guia geral: Markdown
+
 - Grafias: Camel Case --> AvIaO123
            Snake Case --> aviao123
 
@@ -31,3 +43,10 @@ git clone LINK_GITHUB da um enter file open folder: seleciona tudo e apaga.
 - String: "(teste)" ---> $aviao123 = **"teste"**
 
 - Operador de junção de partes: . ---> $aviao123 = "teste" **.** $aviao456 = "teste2" 
+
+- Quebra de linha: <br> ---> echo "<br>";
+
+- Espaçamentos a mais:  ---> echo "teste é &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; aaaaaaa";
+
+
+
