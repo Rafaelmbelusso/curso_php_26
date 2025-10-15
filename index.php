@@ -60,6 +60,8 @@ echo "As somas totais são: &nbsp;&nbsp;&nbsp" . $soma + $subtracao + $calculo;
 
 /**
  * #Temas de casa:
+ *
+ *Exercicio 1:
  * Fazer tabuada do 5 e 6;
  *
  * Exercicio 2:
