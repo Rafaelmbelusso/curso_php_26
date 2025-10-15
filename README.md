@@ -30,7 +30,7 @@ git clone LINK_GITHUB da um enter file open folder: seleciona tudo e apaga.
 
 - Guia geral: Markdown
 
-- Grafias: Camel Case --> AvIaO123
+- Grafias: Camel Case --> AvIaO123,
            Snake Case --> aviao123
 
 - Inserir Bloco de cometários: Na linha ---> //
