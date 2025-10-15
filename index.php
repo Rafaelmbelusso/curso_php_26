@@ -2,6 +2,15 @@
 
 <?php
 
+/**
+ * RESERVAS:
+ * string 'texto qualquer' // 'A' // "A"
+ * char // character 'A'
+ * int // integer 23
+ * float 23.8
+ * double 23.8
+ * decimal 23.8
+*/
 
 $aviao;
 
@@ -49,7 +58,13 @@ echo "<br>";
 
 echo "As somas totais são: &nbsp;&nbsp;&nbsp" . $soma + $subtracao + $calculo;
 
-
+/**
+ * #Temas de casa:
+ * Fazer tabuada do 5 e 6;
+ *
+ * Exercicio 2:
+ * Calclar as médias aritmeticas e harmonicas
+ */
 
 
 
