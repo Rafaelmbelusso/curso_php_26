@@ -18,6 +18,8 @@ git clone LINK_GITHUB da um enter file open folder: seleciona tudo e apaga.
 
 # INFORMAÇÕES VSCODE
 
+- Começar código PHP: <?php
+
 - Negrito: **  ** 
 
 - Itálico: *  *
