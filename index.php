@@ -211,11 +211,82 @@ echo "<br><br>Média Harmonica<br><br>";
 $quantidadedeprovas = 5;
 $mhdenominador = (1 / $prova1) + (1 / $prova2) + (1 / $prova3) + (1 / $prova4) + (1 / $prova5);
 $medharmonica = round($quantidadedeprovas / $mhdenominador, 2);
-echo "A média harmonica é igual a: $medharmonica";
+echo "A média harmonica é igual a: $medharmonica <br>";
+echo "---<br><br>";
 
+//Calcular o volume de uma esfera de um raio com 5cm
+//Dica: Elevar ao cubo -> 2 ** 3 = 8
 
+echo "Volume da esfera com um raio de 5cm:<br><br>";
 
+$raio = 5;
+$pi = 3.14;
+$fracao = 3 / 4;
 
+$volumedaesfera = $fracao * $pi * ($raio ** 3);
 
+echo "O volume da esfera é igual a:&nbsp; $volumedaesfera <br>";
+echo "---<br><br>";
 
+//calcular a area de um triangulo que tenha uma base de 8cm e altura de 6cm
+
+echo "Calcular a área de um triângulo que tenha uma base de 8cm e altura de 6cm: ";
+
+$base = 8;
+$altura = 6;
+$areatriangulo = ($altura * $base) /2; 
+
+echo "<br><br>A área do triângulo é de:&nbsp; $areatriangulo<br>";
+
+echo "---<br><br>";
+
+//calcular quantos segundos tem em 2h e 30min
+
+echo "Calcular quantos segundos tem em 2h e 30min<br><br>";
+
+$minutos = 30;
+$horas = 2;
+
+$horassegundos = $horas * 3600;
+$minutossegundos = $minutos * 60;
+
+$calculosegundos = $horassegundos + $minutossegundos;
+
+echo "O calculo dos segundos é: &nbsp; $calculosegundos<br>" . "---<br><br>";
+
+//calcular o IMC de uma pessoa, usar qualquer valor
+
+echo "Calcular o IMC de uma pessoa aleatória<br><br>";
+
+$peso = 62;
+$altura = 1.68;
+$imc = $peso / ($altura ** 2);
+
+echo "O IMC dessa pesso é de:&nbsp $imc<br>"; 
+echo "--- <br><br>";
+
+// calcular 35 graus celcius para fahrenheit
+
+echo "Calcular 35 graus celcius para fahrenheit<br><br>";
+
+$celcius = 35;
+
+$fr = ($celcius * 1.8) + 32;
+
+echo "A conversão final é de: &nbsp; $fr<br>";
+echo "--- <br><br>";
+
+//aplicar formula de bhaskara para a seguinte equação, a = 1; b = -3; c = -4
+
+echo "Resolver bhaskara da seguinte equação : a = 1; b = -3; c = -4<br><br>";
+
+$a = 1;
+$b = -3; 
+$c = -4;
+
+$delta = $b **2 - 4 * $a * $c;
+$xdelta = (-$b + sqrt($delta)) /2 * $a;
+$xdeltas = (-$b - sqrt($delta)) /2 * $a;
+
+echo "As respostas da equação são&nbsp; $xdelta &nbsp;e&nbsp; $xdeltas";
 

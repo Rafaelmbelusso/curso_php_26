@@ -52,5 +52,8 @@ git clone LINK_GITHUB da um enter file open folder: seleciona tudo e apaga.
 
 - Para arredondar valores nos calculos: round (casas decimais) ---> $medharmonica = **round**($quantidadedeprovas / $mhdenominador, **2**);
 
+- Elevar numeros na potência: 2 ** 3 = 8
 
+- Para adicionar uma constante: CONST ---> CONST **PI**
 
+- Para adicionar uma raiz: sqrt ---> $raiz = sqrt($numero);
