@@ -19,7 +19,7 @@ $valor1 = 10;
 $valor2 = 15;
 $soma = $valor1 + $valor2;
 $soma = $soma + 3;
-echo "A soma é: " . $soma;
+echo "<br><br>A soma é: " . $soma;
 
 echo "<br>";
 
@@ -28,7 +28,7 @@ $valor2 = 520;
 
 $subtracao = $valor1 - $valor2;
 
-echo "a subtração é: $subtracao";
+echo "A subtração é: $subtracao";
 
 $valor1 = 1000;
 $valor2 = 250;
@@ -290,3 +290,4 @@ $xdeltas = (-$b - sqrt($delta)) /2 * $a;
 
 echo "As respostas da equação são&nbsp; $xdelta &nbsp;e&nbsp; $xdeltas";
 
+//teste pc de casa

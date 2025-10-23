@@ -56,4 +56,4 @@ git clone LINK_GITHUB da um enter file open folder: seleciona tudo e apaga.
 
 - Para adicionar uma constante: CONST ---> CONST **PI**
 
-- Para adicionar uma raiz: sqrt ---> $raiz = sqrt($numero);
+- Para adicionar uma raiz: sqrt ---> $raiz = sqrt($numero); 
