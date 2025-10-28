@@ -199,7 +199,7 @@ $tirei5 = 34;
 $mpnumerador = ($prova1 * $tirei1) + ($prova2 * $tirei2) + ($prova3 * $tirei3) + ($prova4 * $tirei4) + ($prova5 * $tirei5);
 $mpdenominador = $tirei1 + $tirei2 + $tirei3 + $tirei4 + $tirei5;
 
-$mediaponderada = round($mpnumerador / $mpdenominador, 3);
+$mediaponderada = round($mpnumerador / $mpdenominador, 2);
 echo "A média ponderada das notas das provas é: $mediaponderada";
 
 echo "<br> ---";
@@ -260,7 +260,7 @@ echo "Calcular o IMC de uma pessoa aleatória<br><br>";
 
 $peso = 62;
 $altura = 1.68;
-$imc = $peso / ($altura ** 2);
+$imc = round($peso / ($altura ** 2), 2);
 
 echo "O IMC dessa pesso é de:&nbsp $imc<br>"; 
 echo "--- <br><br>";
@@ -288,6 +288,60 @@ $delta = $b **2 - 4 * $a * $c;
 $xdelta = (-$b + sqrt($delta)) /2 * $a;
 $xdeltas = (-$b - sqrt($delta)) /2 * $a;
 
-echo "As respostas da equação são&nbsp; $xdelta &nbsp;e&nbsp; $xdeltas";
+echo "As respostas da equação são&nbsp; $xdelta &nbsp;e&nbsp; $xdeltas<br>";
+
+echo "--- <br><br>";
+
+//aplicar formula de bhaskara para a seguinte equação, a = 1; b = 2; c = -5
+
+echo "Resolver bhaskara da seguinte equação : a = 1; b = 2; c = -5<br><br>";
+
+$a = 1;
+$b = 2; 
+$c = -5;
+
+$delta = $b **2 - 4 * $a * $c;
+$xdelta = round((-$b + sqrt($delta)) /2 * $a, 2);
+$xdeltas = round((-$b - sqrt($delta)) /2 * $a, 2);
+
+echo "As respostas da equação são&nbsp; $xdelta &nbsp;e&nbsp; $xdeltas<br>";
 
 //teste pc de casa
+
+echo "--- <br><br>";
+
+// calcular 35 graus celcius para fahrenheit
+
+echo "Calcular 95 graus fahrenhei para celsius<br><br>";
+
+$fr = 35;
+
+$celcius = ($fr - 32) / 1.8;
+
+echo "A conversão final é de: &nbsp; $fr<br>";
+echo "--- <br><br>";
+
+// calcular 95 graus Kelvin para celcius
+
+echo "Calcular 95 graus Kelvin para celsius<br><br>";
+
+CONST CKEL = 273.15;
+$kelvin = 95;
+$celcius = round($kelvin - CKEL, 0);
+
+echo "A conversão final é de: &nbsp; $celcius<br>";
+echo "--- <br><br>";
+
+// calcular 95 graus celcius para kevin
+
+echo "Calcular  -178.15 graus celcius para kelvin<br><br>";
+
+$celcius =  -178.15;
+$kelvin = $celcius + CKEL;
+
+echo "A conversão final é de: &nbsp; $kelvin<br>";
+echo "--- <br><br>";
+
+
+
+
