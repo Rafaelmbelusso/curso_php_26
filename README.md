@@ -59,6 +59,8 @@ git clone LINK_GITHUB da um enter file open folder: seleciona tudo e apaga.
 
 - Sincronizar para o GitHub: **git push**
 
+- Atualização dos dados do github (depois do primeiro git add): **git pull**
+
 - Ativar localhost/apache no terminal: **sudo service apache2 start**
 
 
