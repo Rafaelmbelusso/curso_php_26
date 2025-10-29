@@ -64,6 +64,9 @@ git clone LINK_GITHUB da um enter file open folder: seleciona tudo e apaga.
 
 # INFORMAÇÕES VSCODE
 
+
+## BÁSICO
+
 - Começar código PHP: <?php
 
 - Negrito: **  ** 
@@ -96,6 +99,8 @@ git clone LINK_GITHUB da um enter file open folder: seleciona tudo e apaga.
 
 - Espaçamentos a mais:  ---> echo "teste é **(&-n-b-s-p;)** testador"; (sem (teste) e - - -)
 
+## VALORES E EXPRESSÕES ARITMÉTICAS
+
 - Para arredondar valores nos calculos: round (casas decimais) ---> $medharmonica = **round**($quantidadedeprovas / $mhdenominador, **2**);
 
 - Elevar numeros na potência: 2 ** 3 = 8
@@ -103,3 +108,7 @@ git clone LINK_GITHUB da um enter file open folder: seleciona tudo e apaga.
 - Para adicionar uma constante: CONST ---> CONST **PI**
 
 - Para adicionar uma raiz: sqrt ---> $raiz = sqrt($numero); 
+
+- Expressões lógicas são dadas para esses códigos: **&&** (e), **||** (ou), **==** (igual) e **>=** (maior ou igual)
+
+- Ínicio de expressões lógicas: if (as condições são verdades) if else (algumas das condições são verdades, outras são falsas) e else (todas as condições são falsas)

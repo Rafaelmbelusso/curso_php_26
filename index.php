@@ -220,12 +220,21 @@ echo "---<br><br>";
 echo "Volume da esfera com um raio de 5cm:<br><br>";
 
 $raio = 5;
-$pi = 3.14;
+CONST PI = 3.14;
 $fracao = 3 / 4;
 
-$volumedaesfera = $fracao * $pi * ($raio ** 3);
+$volumedaesfera = $fracao * PI * ($raio ** 3);
 
 echo "O volume da esfera é igual a:&nbsp; $volumedaesfera <br>";
+echo "---<br><br>";
+
+echo "Área da esfera com um raio de 5cm:<br><br>";
+
+$raio = 5;
+
+$areadaesfera = 4 * PI * ($raio ** 3);
+
+echo "A área da esfera é igual a:&nbsp; $areadaesfera <br>";
 echo "---<br><br>";
 
 //calcular a area de um triangulo que tenha uma base de 8cm e altura de 6cm
@@ -271,9 +280,9 @@ echo "Calcular 35 graus celcius para fahrenheit<br><br>";
 
 $celcius = 35;
 
-$fr = ($celcius * 1.8) + 32;
+$fahrenheit = ($celcius * 1.8) + 32;
 
-echo "A conversão final é de: &nbsp; $fr<br>";
+echo "A conversão final é de: &nbsp; $fahrenheit<br>";
 echo "--- <br><br>";
 
 //aplicar formula de bhaskara para a seguinte equação, a = 1; b = -3; c = -4
@@ -314,11 +323,11 @@ echo "--- <br><br>";
 
 echo "Calcular 95 graus fahrenhei para celsius<br><br>";
 
-$fr = 35;
+$fahrenheit = 35;
 
-$celcius = ($fr - 32) / 1.8;
+$celcius = ($fahrenheit - 32) / 1.8;
 
-echo "A conversão final é de: &nbsp; $fr<br>";
+echo "A conversão final é de: &nbsp; $fahrenheit<br>";
 echo "--- <br><br>";
 
 // calcular 95 graus Kelvin para celcius
@@ -341,6 +350,35 @@ $kelvin = $celcius + CKEL;
 
 echo "A conversão final é de: &nbsp; $kelvin<br>";
 echo "--- <br><br>";
+
+$testador = 10;
+
+if ($testador == 10) {
+    echo "Eu sou o teste!<br>";
+    echo "Também vou comer chocolate<br>---<br><br>";
+}
+
+$tenhoDinheiro = false;
+$tenhoVontadeDeCafe = false;
+
+if ($tenhoDinheiro && $tenhoVontadeDeCafe) {
+    echo "vou tomar café<br>";
+} else if ($tenhoDinheiro && !$tenhoVontadeDeCafe) {
+    echo "vou comprar chocolate<br>";
+} else {
+    echo "não tenho vontade de nada<br>";
+}
+
+
+
+
+
+/**
+ * Expressões lógicas
+ * if (&&)
+ * if else
+ * else (||)
+ */
 
 
 
