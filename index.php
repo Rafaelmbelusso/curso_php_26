@@ -297,12 +297,13 @@ $delta = $b **2 - 4 * $a * $c;
 $xdelta = (-$b + sqrt($delta)) /2 * $a;
 $xdeltas = (-$b - sqrt($delta)) /2 * $a;
 
-<<<<<<< HEAD
+echo "<<<<<<< HEAD";
+
 echo "As respostas da equação são&nbsp; $xdelta &nbsp;e&nbsp; $xdeltas";
 echo "<br>";
 
 //teste pc de casa
-=======
+
 echo "As respostas da equação são&nbsp; $xdelta &nbsp;e&nbsp; $xdeltas<br>";
 
 echo "--- <br><br>";
@@ -389,4 +390,37 @@ if ($tenhoDinheiro && $tenhoVontadeDeCafe) {
 
 
 
->>>>>>> df66f8ae5866c441c50b85b686d8a497f5ebaba6
+// >>>>>>> df66f8ae5866c441c50b85b686d8a497f5ebaba6
+
+$num = 2;
+
+if($num % 2 == 0){
+    echo "Par<br>";
+}else{
+    echo "Impar<br>";
+}
+
+$num = 13;
+
+if($num % 2 == 0){
+    echo "Par<br>";
+}else{
+    echo "Impar<br>";
+}
+
+$num = 19;
+
+if($num % 2 == 0){
+    echo "Par<br>";
+}else{
+    echo "Impar<br>";
+}
+
+$num = 23;
+
+if($num % 2 == 0){
+    echo "Par<br>";
+}else{
+    echo "Impar<br>";
+}
+
