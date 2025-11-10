@@ -199,7 +199,7 @@ $tirei5 = 34;
 $mpnumerador = ($prova1 * $tirei1) + ($prova2 * $tirei2) + ($prova3 * $tirei3) + ($prova4 * $tirei4) + ($prova5 * $tirei5);
 $mpdenominador = $tirei1 + $tirei2 + $tirei3 + $tirei4 + $tirei5;
 
-$mediaponderada = round($mpnumerador / $mpdenominador, 3);
+$mediaponderada = round($mpnumerador / $mpdenominador, 2);
 echo "A média ponderada das notas das provas é: $mediaponderada";
 
 echo "<br> ---";
@@ -220,12 +220,21 @@ echo "---<br><br>";
 echo "Volume da esfera com um raio de 5cm:<br><br>";
 
 $raio = 5;
-$pi = 3.14;
+CONST PI = 3.14;
 $fracao = 3 / 4;
 
-$volumedaesfera = $fracao * $pi * ($raio ** 3);
+$volumedaesfera = $fracao * PI * ($raio ** 3);
 
 echo "O volume da esfera é igual a:&nbsp; $volumedaesfera <br>";
+echo "---<br><br>";
+
+echo "Área da esfera com um raio de 5cm:<br><br>";
+
+$raio = 5;
+
+$areadaesfera = 4 * PI * ($raio ** 3);
+
+echo "A área da esfera é igual a:&nbsp; $areadaesfera <br>";
 echo "---<br><br>";
 
 //calcular a area de um triangulo que tenha uma base de 8cm e altura de 6cm
@@ -260,7 +269,7 @@ echo "Calcular o IMC de uma pessoa aleatória<br><br>";
 
 $peso = 62;
 $altura = 1.68;
-$imc = $peso / ($altura ** 2);
+$imc = round($peso / ($altura ** 2), 2);
 
 echo "O IMC dessa pesso é de:&nbsp $imc<br>"; 
 echo "--- <br><br>";
@@ -271,9 +280,9 @@ echo "Calcular 35 graus celcius para fahrenheit<br><br>";
 
 $celcius = 35;
 
-$fr = ($celcius * 1.8) + 32;
+$fahrenheit = ($celcius * 1.8) + 32;
 
-echo "A conversão final é de: &nbsp; $fr<br>";
+echo "A conversão final é de: &nbsp; $fahrenheit<br>";
 echo "--- <br><br>";
 
 //aplicar formula de bhaskara para a seguinte equação, a = 1; b = -3; c = -4
@@ -288,7 +297,96 @@ $delta = $b **2 - 4 * $a * $c;
 $xdelta = (-$b + sqrt($delta)) /2 * $a;
 $xdeltas = (-$b - sqrt($delta)) /2 * $a;
 
+<<<<<<< HEAD
 echo "As respostas da equação são&nbsp; $xdelta &nbsp;e&nbsp; $xdeltas";
 echo "<br>";
 
 //teste pc de casa
+=======
+echo "As respostas da equação são&nbsp; $xdelta &nbsp;e&nbsp; $xdeltas<br>";
+
+echo "--- <br><br>";
+
+//aplicar formula de bhaskara para a seguinte equação, a = 1; b = 2; c = -5
+
+echo "Resolver bhaskara da seguinte equação : a = 1; b = 2; c = -5<br><br>";
+
+$a = 1;
+$b = 2; 
+$c = -5;
+
+$delta = $b **2 - 4 * $a * $c;
+$xdelta = round((-$b + sqrt($delta)) /2 * $a, 2);
+$xdeltas = round((-$b - sqrt($delta)) /2 * $a, 2);
+
+echo "As respostas da equação são&nbsp; $xdelta &nbsp;e&nbsp; $xdeltas<br>";
+
+//teste pc de casa
+
+echo "--- <br><br>";
+
+// calcular 35 graus celcius para fahrenheit
+
+echo "Calcular 95 graus fahrenhei para celsius<br><br>";
+
+$fahrenheit = 35;
+
+$celcius = ($fahrenheit - 32) / 1.8;
+
+echo "A conversão final é de: &nbsp; $fahrenheit<br>";
+echo "--- <br><br>";
+
+// calcular 95 graus Kelvin para celcius
+
+echo "Calcular 95 graus Kelvin para celsius<br><br>";
+
+CONST CKEL = 273.15;
+$kelvin = 95;
+$celcius = round($kelvin - CKEL, 0);
+
+echo "A conversão final é de: &nbsp; $celcius<br>";
+echo "--- <br><br>";
+
+// calcular 95 graus celcius para kevin
+
+echo "Calcular  -178.15 graus celcius para kelvin<br><br>";
+
+$celcius =  -178.15;
+$kelvin = $celcius + CKEL;
+
+echo "A conversão final é de: &nbsp; $kelvin<br>";
+echo "--- <br><br>";
+
+$testador = 10;
+
+if ($testador == 10) {
+    echo "Eu sou o teste!<br>";
+    echo "Também vou comer chocolate<br>---<br><br>";
+}
+
+$tenhoDinheiro = false;
+$tenhoVontadeDeCafe = false;
+
+if ($tenhoDinheiro && $tenhoVontadeDeCafe) {
+    echo "vou tomar café<br>";
+} else if ($tenhoDinheiro && !$tenhoVontadeDeCafe) {
+    echo "vou comprar chocolate<br>";
+} else {
+    echo "não tenho vontade de nada<br>";
+}
+
+
+
+
+
+/**
+ * Expressões lógicas
+ * if (&&)
+ * if else
+ * else (||)
+ */
+
+
+
+
+>>>>>>> df66f8ae5866c441c50b85b686d8a497f5ebaba6
