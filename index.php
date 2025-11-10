@@ -289,5 +289,6 @@ $xdelta = (-$b + sqrt($delta)) /2 * $a;
 $xdeltas = (-$b - sqrt($delta)) /2 * $a;
 
 echo "As respostas da equação são&nbsp; $xdelta &nbsp;e&nbsp; $xdeltas";
+echo "<br>";
 
 //teste pc de casa
