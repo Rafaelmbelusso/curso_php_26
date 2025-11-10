@@ -8,12 +8,12 @@
 
 4º Passo: Após reiniciar o pc novamente, entre no site oficial do VSCode e faça o download dele normalmente
 
-5º Passo: Assim que abrir o VSCode já instalado, faça o login do ubuntu no canto inferior esquerdo, selecionando o wsl, após isso crie uma pasta teste na área de trabalho e localize ele (VSCode) nessa pasta, dando um File ---> Open folder
+5º Passo: Assim que abrir o VSCode já instalado, faça o login do ubuntu no canto inferior esquerdo, selecionando o wsl
 
 6º Passo: Fazer as atualizações no VSCode, para isso abra o terminal inbutido no VSCode, siga os seguintes passos:
 cd ~
 nano setup_lamp.sh  
-
+----> coloque os comandos um de cada vez
 ----> Isso vai abrir o editor de texto do Terminal, cole todo o conteúdo do script utilizado
 
 Pressione Ctrl + O (isso é “Write Out”)
