@@ -458,3 +458,54 @@ for ($fator = $num -1; $fator >= 1; $fator = $fator - 1 ){
 
 }
 echo "<br>A fatoração é igual à: $num<br>---<br><br>";
+
+
+//tema de casa, todas as tarefas do for agora com o while
+
+
+// Contar e Exibir os numeros pares de 1 até 50
+
+echo "Contar e Exibir os numeros pares de 1 até 50 <br><br>";
+
+$testa = 1;
+
+while ($testa <= 50){
+    $testa = $testa + 1;
+    if ($testa % 2 <> 0){
+        continue;
+    }
+    echo "<br>";
+     echo "Os números são $testa";
+}
+
+echo "<br>---<br><br>";
+
+// Exibir os numeros em ordem DECRESCENTE de 0 à 10
+
+echo "Exibir os numeros em ordem DECRESCENTE de 0 à 10<br><br>";
+
+$testa = 10;
+
+while ($testa >= 0){
+    echo "<br>";
+    echo "Os números são $testa";
+     $testa = $testa - 1;
+    }
+
+echo "<br>---<br><br>";
+
+//calcular fatorial de um numero
+
+echo "Calcular fatorial de do numero cinco<br>";
+
+$num = 6;
+$fator = $num -1;
+
+while ($fator >= 1){
+    $num *= $fator;
+     $fator = $fator - 1;
+}
+echo "<br>A fatoração é igual à: $num<br>---<br><br>";
+
+
+

@@ -120,3 +120,5 @@ git clone LINK_GITHUB da um enter file open folder: seleciona tudo e apaga.
 - Ínicio de expressões lógicas: if (as condições são verdades) if else (algumas das condições são verdades, outras são falsas) e else (todas as condições são falsas)
 
 - Para iniciar um loop: utilizar: **for** ---> for ($testa = 0;$testa <= 10; $testa = $testa + 1){
+
+- Para em um loop, pular um numero ou algo especifico, utilizar o código: **continue**
