@@ -102,40 +102,6 @@ echo "TABUADA DO 6";
 echo "<br>";
 echo "<br>";
 
-$numero = 6;
-
-echo "1 x $numero = " . $numero * 1 . "<br>";
-echo "2 x $numero = " . $numero * 2 . "<br>";
-echo "3 x $numero = " . $numero * 3 . "<br>";
-echo "4 x $numero = " . $numero * 4 . "<br>";
-echo "5 x $numero = " . $numero * 5 . "<br>";
-echo "6 x $numero = " . $numero * 6 . "<br>";
-echo "7 x $numero = " . $numero * 7 . "<br>";
-echo "8 x $numero = " . $numero * 8 . "<br>";
-echo "9 x $numero = " . $numero * 9 . "<br>";
-echo "10 x $numero = " . $numero * 10 . "<br>";
-
-echo "<br>";
-echo "<br>";
-
-echo "TABUADA DO 7";
-
-echo "<br>";
-echo "<br>";
-
-$numero = 7;
-
-echo "1 x $numero = " . $numero * 1 . "<br>";
-echo "2 x $numero = " . $numero * 2 . "<br>";
-echo "3 x $numero = " . $numero * 3 . "<br>";
-echo "4 x $numero = " . $numero * 4 . "<br>";
-echo "5 x $numero = " . $numero * 5 . "<br>";
-echo "6 x $numero = " . $numero * 6 . "<br>";
-echo "7 x $numero = " . $numero * 7 . "<br>";
-echo "8 x $numero = " . $numero * 8 . "<br>";
-echo "9 x $numero = " . $numero * 9 . "<br>";
-echo "10 x $numero = " . $numero * 10 . "<br>";
-
 echo "<br>";
 echo "<br>";
 
@@ -297,7 +263,6 @@ $delta = $b **2 - 4 * $a * $c;
 $xdelta = (-$b + sqrt($delta)) /2 * $a;
 $xdeltas = (-$b - sqrt($delta)) /2 * $a;
 
-echo "<<<<<<< HEAD";
 
 echo "As respostas da equação são&nbsp; $xdelta &nbsp;e&nbsp; $xdeltas";
 echo "<br>";
@@ -369,11 +334,11 @@ $tenhoDinheiro = false;
 $tenhoVontadeDeCafe = false;
 
 if ($tenhoDinheiro && $tenhoVontadeDeCafe) {
-    echo "vou tomar café<br>";
+    echo "vou tomar café<br><br>";
 } else if ($tenhoDinheiro && !$tenhoVontadeDeCafe) {
-    echo "vou comprar chocolate<br>";
+    echo "vou comprar chocolate<br><br>";
 } else {
-    echo "não tenho vontade de nada<br>";
+    echo "não tenho vontade de nada<br><br>";
 }
 
 
@@ -390,7 +355,6 @@ if ($tenhoDinheiro && $tenhoVontadeDeCafe) {
 
 
 
-// >>>>>>> df66f8ae5866c441c50b85b686d8a497f5ebaba6
 
 $num = 2;
 
@@ -424,3 +388,73 @@ if($num % 2 == 0){
     echo "Impar<br>";
 }
 
+echo "---<br><br>";
+
+for ($a = 0; $a < 10; $a++){
+    echo "<br>";
+    echo "O número é: $a";
+}
+
+echo "<br><br>";
+
+$numero = 5;
+
+echo "a tabuada do $numero<br>";
+for ($a = 0; $a <= 10; $a++){
+    echo "<br>";
+    echo "$numero X $a =" . $numero * $a;
+}
+
+
+echo "<br><br>";
+
+
+for ($testa = 0;$testa <= 10; $testa = $testa + 1){
+    echo "<br>";
+    echo "O número é $testa";
+    if ($testa == 7){
+        break;
+    }
+}
+echo "<br>---<br><br>";
+
+
+// Contar e Exibir os numeros pares de 1 até 50
+
+echo "Contar e Exibir os numeros pares de 1 até 50 <br><br>";
+
+for ($testa = 1;$testa < 51; $testa = $testa + 1){
+    echo "<br>";
+
+    if ($testa % 2 == 0){
+        echo "Os números são $testa";
+        continue;
+    }
+}
+echo "<br>---<br><br>";
+
+
+// Exibir os numeros em ordem DECRESCENTE de 0 à 10
+
+
+echo "Exibir os numeros em ordem DECRESCENTE de 0 à 10<br><br>";
+
+for ($testa = 10; $testa >= 0; $testa = $testa - 1){
+    echo "<br>";
+    echo "Os números são $testa";
+    }
+
+echo "<br>---<br><br>";
+
+
+//calcular fatorial de um numero
+
+echo "Calcular fatorial de do numero cinco<br>";
+
+$num = 5;
+
+for ($fator = $num -1; $fator >= 1; $fator = $fator - 1 ){
+    $num *= $fator;
+
+}
+echo "<br>A fatoração é igual à: $num<br>---<br><br>";

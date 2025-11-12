@@ -111,6 +111,12 @@ git clone LINK_GITHUB da um enter file open folder: seleciona tudo e apaga.
 
 - Para adicionar uma raiz: sqrt ---> $raiz = sqrt($numero); 
 
+- Para ter como resultado o "resto da divisão", utilizar **%** (módulo)
+
 - Expressões lógicas são dadas para esses códigos: **&&** (e), **||** (ou), **==** (igual) e **>=** (maior ou igual)
 
+- Para parar completamente um comando, utilizar o código: **break**
+
 - Ínicio de expressões lógicas: if (as condições são verdades) if else (algumas das condições são verdades, outras são falsas) e else (todas as condições são falsas)
+
+- Para iniciar um loop: utilizar: **for** ---> for ($testa = 0;$testa <= 10; $testa = $testa + 1){
