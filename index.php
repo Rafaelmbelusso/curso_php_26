@@ -500,6 +500,50 @@ echo "Calcular fatorial de do numero cinco<br>";
 
 $num = 6;
 $fator = $num -1;
+//calcular fatorial de um numero
+
+echo "Calcular fatorial de do numero cinco<br>";
+
+$num = 6;
+$fator = $num -1;
+
+while ($fator >= 1){
+    $num *= $fator;
+     $fator = $fator - 1;
+}
+echo "<br>A fatoração é igual à: $num<br>---<br><br>";
+
+// código para multiplicação
+
+$multi = 5;
+echo "Multiplicação do número $multi<br>";
+
+$a = 0;
+while ($a <=10){
+    $resultado = $a * $multi;
+    echo "$a X $multi = $resultado<br>";
+    $a++;
+}echo "---<br><br>";
+
+$multi = 6;
+echo "Multiplicação do número $multi<br>";
+
+$a = 0;
+while ($a <=10){
+    $resultado = $a * $multi;
+    echo "$a X $multi = $resultado<br>";
+    $a++;
+}echo "---<br><br>";
+
+$multi = 10;
+echo "Multiplicação do número $multi<br>";
+
+$a = 0;
+while ($a <=10){
+    $resultado = $a * $multi;
+    echo "$a X $multi = $resultado<br>";
+    $a++;
+}echo "---<br><br>";$multi = 5;
 
 
 
