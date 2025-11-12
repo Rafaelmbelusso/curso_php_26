@@ -113,12 +113,15 @@ git clone LINK_GITHUB da um enter file open folder: seleciona tudo e apaga.
 
 - Para ter como resultado o "resto da divisão", utilizar **%** (módulo)
 
-- Expressões lógicas são dadas para esses códigos: **&&** (e), **||** (ou), **==** (igual) e **>=** (maior ou igual)
+- Expressões lógicas são dadas para esses códigos: **&&** (e), **||** (ou), **==** (igual), **>=** (maior ou igual) e **<>** (diferente)
+
+##  EXPRESSÕES LÓGICAS E LAÇOS DE REPETIÇÃO
 
 - Para parar completamente um comando, utilizar o código: **break**
 
+- Para em um loop, pular um numero ou algo especifico, utilizar o código: **continue**
+
 - Ínicio de expressões lógicas: if (as condições são verdades) if else (algumas das condições são verdades, outras são falsas) e else (todas as condições são falsas)
 
-- Para iniciar um loop: utilizar: **for** ---> for ($testa = 0;$testa <= 10; $testa = $testa + 1){
+- Para iniciar um loop: utilizar: **for** ---> for ($testa = 0;$testa <= 10; $testa = $testa + 1)
 
-- Para em um loop, pular um numero ou algo especifico, utilizar o código: **continue**
