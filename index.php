@@ -551,3 +551,28 @@ while ($a <=10){
 
 //teste teste teste
 
+echo "Mostre quais numeros são pares de 0 a 10 com for e pulando o numero 10 e 11<br><br>";
+
+for ($numero = 2;$numero <= 15;$numero++){
+    if ($numero == 10){
+        continue;
+    }
+    echo "$numero ";
+    $resto = $numero % 2 == 0;
+    $divisaoexata = $resto == 0;
+    if ($divisaoexata == 0){
+        echo "é par<br>";
+    }else{
+        echo "é impar<br>";
+    }
+} echo "<br>---<br><br>";
+
+
+
+/**
+ * Fazer o mesmo exercicio utilizando for e while
+ * Encontrar os 5 primeiros numeros primos
+ */
+
+
+echo "Encontrar os cinco primeiros numeros primos<br><br>";
