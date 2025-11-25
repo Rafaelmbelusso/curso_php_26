@@ -567,12 +567,72 @@ for ($numero = 2;$numero <= 15;$numero++){
     }
 } echo "<br>---<br><br>";
 
+// Exercício: Encontrar os 5 primeiros números Primos
+
+echo "Os 5 primeiros numeros primos são:";
+
+$contadorDeNumPrimos = 0;
+$contadorDeDivisores = 0;
+$primoOuNao = 5;
+$antecessor = $primoOuNao -1;
+
+for ($divisor = 2; $divisor <= $antecessor; $divisor++) {
+
+    if ($contadorDeNumPrimos == 5) {
+        break;
+    }
+
+    $restoDaDivisao = $primoOuNao % $divisor;
+    $ehDivisaoExata = $restoDaDivisao == 0;
+
+    if ($ehDivisaoExata) {
+        $primoOuNao++;
+        $antecessor = $primoOuNao -1;
+        $divisor = 1;
+        continue;
+    }
+
+    if ($divisor == $antecessor) {
+        echo "O número $primoOuNao é primo<br>";
+        $primoOuNao++;
+        $antecessor = $primoOuNao -1;
+        $contadorDeNumPrimos++;
+        $divisor = 1;
+    }
+}
+echo "<br><br>";
+
+// Fazer exercício com for e com while.
 
 
-/**
- * Fazer o mesmo exercicio utilizando for e while
- * Encontrar os 5 primeiros numeros primos
- */
+$contadorDeNumPrimos = 0;
+$contadorDeDivisores = 0;
+$primoOuNao = 5;
+$antecessor = $primoOuNao -1;
+$divisor = 2;
 
+while ($divisor <= $antecessor) {
 
-echo "Encontrar os cinco primeiros numeros primos<br><br>";
+    if ($contadorDeNumPrimos == 5) {
+        break;
+    }
+
+    $restoDaDivisao = $primoOuNao % $divisor;
+    $ehDivisaoExata = $restoDaDivisao == 0;
+
+    if ($ehDivisaoExata) {
+        $primoOuNao++;
+        $antecessor = $primoOuNao -1;
+        $divisor = 1;
+        continue;
+    }
+
+    if ($divisor == $antecessor) {
+        echo "O número $primoOuNao é primo<br>";
+        $primoOuNao++;
+        $antecessor = $primoOuNao -1;
+        $contadorDeNumPrimos++;
+        $divisor = 1;
+    }
+}
+// ARRUMAR
