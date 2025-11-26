@@ -636,3 +636,33 @@ while ($divisor <= $antecessor) {
     }
 }
 // ARRUMAR
+
+//PRIMO DOIS FOR
+
+$contPrimos = 0;
+$numeroAvaliado = 3;
+
+for ($numeroAvaliado = 3; $contPrimos < 5; $numeroAvaliado++){ 
+
+    $antecessor = $numeroAvaliado -1; 
+    $ehPrimo = true;
+
+    for ($divisor = 2; $divisor <= $antecessor; $divisor++){ 
+
+        $restoDivisao = $numeroAvaliado % $divisor; 
+        $divisaoExata = $restoDivisao == 0;
+
+        
+        if ($divisaoExata){ 
+            $ehPrimo = false;
+            break;
+        }
+
+    }
+    
+    if ($ehPrimo == true){
+        echo "O número é $numeroAvaliado é primo<br>";
+        $contPrimos++;
+    }
+
+}
