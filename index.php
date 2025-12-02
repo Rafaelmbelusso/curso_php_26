@@ -1,6 +1,7 @@
-# TESTES VALORES ARITMETICOS
-
 <?php
+
+#Teste valores 
+
 
 /**
  * RESERVAS:
@@ -12,7 +13,10 @@
  * decimal 23.8
 */
 
-$aviao;
+
+echo "<br>Olá mundo";
+
+$aviao; //variavel
 
 $aviao = "Boeing747";
 $valor1 = 10;
@@ -22,6 +26,13 @@ $soma = $soma + 3;
 echo "<br><br>A soma é: " . $soma;
 
 echo "<br>";
+
+$valor = 1000;
+
+
+
+
+
 
 $valor1 = 1000;
 $valor2 = 520;
@@ -551,21 +562,7 @@ while ($a <=10){
 
 //teste teste teste
 
-echo "Mostre quais numeros são pares de 0 a 10 com for e pulando o numero 10 e 11<br><br>";
 
-for ($numero = 2;$numero <= 15;$numero++){
-    if ($numero == 10){
-        continue;
-    }
-    echo "$numero ";
-    $resto = $numero % 2 == 0;
-    $divisaoexata = $resto == 0;
-    if ($divisaoexata == 0){
-        echo "é par<br>";
-    }else{
-        echo "é impar<br>";
-    }
-} echo "<br>---<br><br>";
 
 // Exercício: Encontrar os 5 primeiros números Primos
 
@@ -635,34 +632,28 @@ while ($divisor <= $antecessor) {
         $divisor = 1;
     }
 }
-// ARRUMAR
 
-//PRIMO DOIS FOR
+echo "Os 3 primeiros numeros perfeitos:<br>";
 
-$contPrimos = 0;
-$numeroAvaliado = 3;
+$encontrados = 0;
 
-for ($numeroAvaliado = 3; $contPrimos < 5; $numeroAvaliado++){ 
+for ($num = 2; $encontrados < 1; $num++) {
+    $soma = 0;
 
-    $antecessor = $numeroAvaliado -1; 
-    $ehPrimo = true;
-
-    for ($divisor = 2; $divisor <= $antecessor; $divisor++){ 
-
-        $restoDivisao = $numeroAvaliado % $divisor; 
-        $divisaoExata = $restoDivisao == 0;
-
+    for ($i = 1; $i <= $num / 2; $i++) {
         
-        if ($divisaoExata){ 
-            $ehPrimo = false;
-            break;
+        if ($num % $i == 0) {
+            $soma += $i;
+
+            if ($soma > $num) {
+                break;
+            }
         }
-
-    }
-    
-    if ($ehPrimo == true){
-        echo "O número é $numeroAvaliado é primo<br>";
-        $contPrimos++;
     }
 
+    if ($soma == $num) {
+        echo "$num é perfeito<br>";
+        $encontrados++;
+    }
 }
+
