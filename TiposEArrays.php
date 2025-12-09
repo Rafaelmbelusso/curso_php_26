@@ -81,3 +81,30 @@ for ($i = 0; $i < 5; $i++){
     echo $saoTodosPrimos[$i] . ", ";
 
 }echo "<br>";
+
+$contadorDeNumPrimos = 0;
+$saoTodosPrimos = [];
+for ($primoOuNao = 3; $contadorDeNumPrimos < 20; $primoOuNao++) {
+
+    $antecessor = $primoOuNao -1;
+    $ehPrimo = true;
+
+    for($divisor = 2; $divisor <= $antecessor; $divisor++) {
+
+        $restoDaDivisao = $primoOuNao % $divisor;
+        $ehDivisaoExata = $restoDaDivisao == 0;
+
+        if ($ehDivisaoExata) {
+            $ehPrimo = false;
+            break;
+        }
+    }
+
+    if ($ehPrimo == true){
+        $saoTodosPrimos[] = $primoOuNao;
+        $contadorDeNumPrimos++;
+    }
+
+}echo "<br><br>";
+
+echo implode (", ", $saoTodosPrimos);

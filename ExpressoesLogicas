@@ -276,27 +276,3 @@ while ($divisor <= $antecessor) {
         $divisor = 1;
     }
 }
-
-echo "Os 3 primeiros numeros perfeitos:<br>";
-
-$encontrados = 0;
-
-for ($num = 2; $encontrados < 1; $num++) {
-    $soma = 0;
-
-    for ($i = 1; $i <= $num / 2; $i++) {
-        
-        if ($num % $i == 0) {
-            $soma += $i;
-
-            if ($soma > $num) {
-                break;
-            }
-        }
-    }
-
-    if ($soma == $num) {
-        echo "$num é perfeito<br>";
-        $encontrados++;
-    }
-}
