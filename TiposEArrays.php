@@ -147,12 +147,12 @@ $testeVoltando = [];
 
 for ($i = 0; $i < $quantidadeDeLetras; $i++){
 
-    $testeIndo[] = $palavra[$i];
+    $testeIndo[] = $palavra[$i]; //atribui o array do primeiro até o ultimo
 }
 
 for ($j = $UmMenos; $j >= 0; $j = $j - 1){
 
-    $testeVoltando[] = $palavra[$j];
+    $testeVoltando[] = $palavra[$j]; //atribui o array do ultimo até o primeiro
 }
 
 $ehigual = $testeIndo == $testeVoltando;
@@ -164,5 +164,16 @@ if ($ehigual){
 }
 echo "<br>";
 
+/**
+ * Contar quantas vogais existem em uma frase ou palavra
+ * 
+ * in_array();
+ * 
+ * $existeVogal = in_array(Vogalminuscula, $vogais);
+ * 
+ */
 
-
+/**
+ * Contar quais vogais existem em cada palavra, quantos a..., quantos e...
+ * 
+ */
