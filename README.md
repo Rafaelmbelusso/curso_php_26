@@ -125,3 +125,26 @@ git clone LINK_GITHUB da um enter file open folder: seleciona tudo e apaga.
 
 - Para iniciar um loop: utilizar: **for** ---> for ($testa = 0;$testa <= 10; $testa = $testa + 1)
 
+## TIPOS E ARRAYS
+
+- Tipo primitivo: 
+* Int | **Integer** == 1, 2, 3...
+* Float | **Double** == 1.0, 2.0, 3.0...
+* String | **Char-Character** == "Oi", 'o'...
+
+- Tipos compostos ou coleção de dados:
+ * Vetor | Array == $numeros = array();
+
+ - A contagem dos arrays começa sempre do 0
+
+ - Para inserir letras de uma palavra como array --> $palavra = "subinoonibus";, ele vai considerar como (0) = s ; (1) = u ; ...
+
+ - para inserir váriaveis dentro do array ---> **$vaiReceber[]** = $palavra[$i]; (sempre lembrar de informar que ele recebe um array vazio [])
+
+ - Para contar quantas unidades tem o array (começa a contar de 1) --> **strlen**($palavra);
+
+ - Para dar echo em um array sem for (exclusivo vscode) ---> **echo implode (", ", $array)**
+
+ - Duas formas de conferir o que tem dentro de seu array:
+ * **print_r ($numeros);**
+ * **var_dump($numeros);**
