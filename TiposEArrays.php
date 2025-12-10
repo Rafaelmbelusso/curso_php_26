@@ -108,3 +108,61 @@ for ($primoOuNao = 3; $contadorDeNumPrimos < 20; $primoOuNao++) {
 }echo "<br><br>";
 
 echo implode (", ", $saoTodosPrimos);
+echo "<br>";
+
+$arrayInicio = [5, 10, 50];
+$arrayFim = [10, 90, 30];
+$arraySoma = [];
+
+for ($i = 0; $i < 3; $i++){
+    $arraySoma[$i] = $arrayInicio [$i] + $arrayFim [$i];
+}
+echo "<br>Soma dos vetores é<br>";
+echo implode (", ", $arraySoma);
+
+$arrayInicio = [5, 10, 50];
+$arrayFim = [10, 90, 30];
+$arraySoma = [];
+
+for ($i = 0; $i < 3; $i++){
+    $arraySoma[$i] = $arrayInicio [$i] * $arrayFim [$i];
+}
+echo "<br><br>Multiplicação dos vetores é<br>";
+echo implode (", ", $arraySoma);
+
+/**
+ * Dada uma palavra dada pelo usuário,
+ * Verificar se a mesma forma um palíndromo.
+ * Ex.: ana, subi no onibus, kaiak, natan.
+ */
+
+
+echo "<br><br>";
+$palavra = "omississimo";
+$quantidadeDeLetras = strlen($palavra);
+$UmMenos = $quantidadeDeLetras - 1;
+$testeIndo = [];
+$testeVoltando = [];
+
+
+for ($i = 0; $i < $quantidadeDeLetras; $i++){
+
+    $testeIndo[] = $palavra[$i];
+}
+
+for ($j = $UmMenos; $j >= 0; $j = $j - 1){
+
+    $testeVoltando[] = $palavra[$j];
+}
+
+$ehigual = $testeIndo == $testeVoltando;
+
+if ($ehigual){
+    echo "É Palindromo a palavra: $palavra";
+} else{
+    echo "Não é palindromo a palavra: $palavra";
+}
+echo "<br>";
+
+
+
