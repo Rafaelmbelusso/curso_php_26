@@ -64,7 +64,7 @@ git clone LINK_GITHUB da um enter file open folder: seleciona tudo e apaga.
 - Ativar localhost/apache no terminal: **sudo service apache2 start**
 
 
-# INFORMAÇÕES VSCODE
+# INFORMAÇÕES PHP
 
 
 ## BÁSICO
@@ -133,17 +133,17 @@ git clone LINK_GITHUB da um enter file open folder: seleciona tudo e apaga.
 * String | **Char-Character** == "Oi", 'o'...
 
 - Tipos compostos ou coleção de dados:
- * Vetor | Array == $numeros = array();
+ * Vetor | **Array** == $numeros = array();
 
  - A contagem dos arrays começa sempre do 0
 
- - Para inserir letras de uma palavra como array --> $palavra = "subinoonibus";, ele vai considerar como (0) = s ; (1) = u ; ...
+ - Para inserir letras de uma palavra como array --> $palavra = "subir";, ele vai considerar como **(0) = s ; (1) = u ; ...
 
  - para inserir váriaveis dentro do array ---> **$vaiReceber[]** = $palavra[$i]; (sempre lembrar de informar que ele recebe um array vazio [])
 
  - Para contar quantas unidades tem o array (começa a contar de 1) --> **strlen**($palavra);
 
- - Para dar echo em um array sem for (exclusivo vscode) ---> **echo implode (", ", $array)**
+ - Para dar echo em um array sem for ---> **echo implode (", ", $array)**
 
  - Duas formas de conferir o que tem dentro de seu array:
  * **print_r ($numeros);**
