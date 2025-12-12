@@ -162,7 +162,7 @@ if ($ehigual){
 } else{
     echo "Não é palindromo a palavra: $palavra";
 }
-echo "<br>";
+echo "<br><br>";
 
 /**
  * Contar quantas vogais existem em uma frase ou palavra
@@ -177,3 +177,92 @@ echo "<br>";
  * Contar quais vogais existem em cada palavra, quantos a..., quantos e...
  * 
  */
+
+
+// Contar quantas vogais existem em uma frase
+
+$vogais = "aeiou";
+$palavra = "InFoSeRv";
+$palavraMin = strtolower($palavra);
+$tamanhoDaPalavra = strlen($palavra);
+$qtdVogais = 0;
+
+for ($i = 0; $i < $tamanhoDaPalavra; $i++){
+    $palavraAvaliada = $palavraMin[$i];
+
+    for ($j = 0; $j < 5; $j++){
+        $letraTestada = $vogais[$j];
+
+        if ($letraTestada == $palavraAvaliada){
+            $qtdVogais++;
+            break;
+        } else{
+            continue;
+        }
+    }
+}
+
+echo "A palavra $palavra tem $qtdVogais vogais.";
+
+
+// Contar quais vogais existem em cada palavra, quantos a..., quantos e...
+
+// 1 descobrir quais são vogais
+
+$vogais = "aeiou";
+$palavra = "InFoSeRv";
+$palavraMin = strtolower($palavra);
+$tamanhoDaPalavra = strlen($palavra);
+$vogaisContadas = [];
+
+for ($i = 0; $i < $tamanhoDaPalavra; $i++){
+    $palavraAvaliada = $palavraMin[$i];
+
+    for ($j = 0; $j < 5; $j++){
+        $letraTestada = $vogais[$j];
+
+        if ($letraTestada == $palavraAvaliada){
+            $vogaisContadas[] = $palavraAvaliada;
+            break;
+        } else{
+            continue;
+        }
+    }
+}
+
+// contar cada uma delas
+echo "<br><br> Contagem de vogais: <br><br>";
+
+$tamanhoDasVogais = count($vogaisContadas);
+
+$vogalA = 0;
+$vogalE = 0;
+$vogalI = 0;
+$vogalO = 0;
+$vogalU = 0;
+
+for ($i = 0; $i < $tamanhoDasVogais; $i++) {
+    $vogalDescoberta = $vogaisContadas[$i];
+
+    if ($vogalDescoberta == "a"){
+        $vogalA++;
+    }
+    if ($vogalDescoberta == "e"){
+        $vogalE++;
+    }
+    if ($vogalDescoberta == "i"){
+        $vogalI++;
+    }
+    if ($vogalDescoberta == "o") {
+        $vogalO++;
+    }
+    if ($vogalDescoberta == "u"){
+        $vogalU++;
+    }
+}
+
+echo "A: $vogalA<br> E: $vogalE<br> I: $vogalI<br> O: $vogalO<br> U: $vogalU<br>";
+
+
+
+

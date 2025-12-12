@@ -141,10 +141,12 @@ git clone LINK_GITHUB da um enter file open folder: seleciona tudo e apaga.
 
  - para inserir váriaveis dentro do array ---> **$vaiReceber[]** = $palavra[$i]; (sempre lembrar de informar que ele recebe um array vazio [])
 
- - Para contar quantas unidades tem o array (começa a contar de 1) --> **strlen**($palavra);
-
  - Para dar echo em um array sem for ---> **echo implode (", ", $array)**
 
  - Duas formas de conferir o que tem dentro de seu array:
  * **print_r ($numeros);**
  * **var_dump($numeros);**
+
+ - Para contar a quantidade de letras:
+ * Array: **count** ($numeros);
+ * Variavel: **strlen**($numeros);
