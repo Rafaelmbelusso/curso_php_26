@@ -150,3 +150,11 @@ git clone LINK_GITHUB da um enter file open folder: seleciona tudo e apaga.
  - Para contar a quantidade de letras:
  * Array: **count** ($numeros);
  * Variavel: **strlen**($numeros);
+
+ - Para juntar valor de dois ou mais arrays utilize **in_array**---> in_array($array1, $array2);
+
+ ## FUNÇÕES BÁSICAS:
+
+ - Para adicionar uma função, utilize **function** ---> **function** imprimeTexto2($texto){(O que vai ser feito quando mencionar a função)}
+
+ - 

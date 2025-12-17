@@ -235,7 +235,6 @@ $horas = 2;
 
 $horassegundos = $horas * 3600;
 $minutossegundos = $minutos * 60;
-
 $calculosegundos = $horassegundos + $minutossegundos;
 
 echo "O calculo dos segundos é: &nbsp; $calculosegundos<br>" . "---<br><br>";

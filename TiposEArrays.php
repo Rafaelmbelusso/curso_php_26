@@ -182,7 +182,7 @@ echo "<br><br>";
 // Contar quantas vogais existem em uma frase
 
 $vogais = "aeiou";
-$palavra = "InFoSeRv";
+$palavra = "RaFaEl";
 $palavraMin = strtolower($palavra);
 $tamanhoDaPalavra = strlen($palavra);
 $qtdVogais = 0;
@@ -202,7 +202,7 @@ for ($i = 0; $i < $tamanhoDaPalavra; $i++){
     }
 }
 
-echo "A palavra $palavra tem $qtdVogais vogais.";
+echo "<br<br><br>TEMA DE CASA:<br>A palavra $palavra tem $qtdVogais vogais.";
 
 
 // Contar quais vogais existem em cada palavra, quantos a..., quantos e...
@@ -210,7 +210,7 @@ echo "A palavra $palavra tem $qtdVogais vogais.";
 // 1 descobrir quais são vogais
 
 $vogais = "aeiou";
-$palavra = "InFoSeRv";
+$palavra = "LUISINHO";
 $palavraMin = strtolower($palavra);
 $tamanhoDaPalavra = strlen($palavra);
 $vogaisContadas = [];
@@ -231,7 +231,7 @@ for ($i = 0; $i < $tamanhoDaPalavra; $i++){
 }
 
 // contar cada uma delas
-echo "<br><br> Contagem de vogais: <br><br>";
+echo "<br><br><br>A palavra $palavra tem: <br> Contagem de vogais: <br><br>";
 
 $tamanhoDasVogais = count($vogaisContadas);
 
@@ -262,7 +262,3 @@ for ($i = 0; $i < $tamanhoDasVogais; $i++) {
 }
 
 echo "A: $vogalA<br> E: $vogalE<br> I: $vogalI<br> O: $vogalO<br> U: $vogalU<br>";
-
-
-
-
