@@ -101,6 +101,8 @@ git clone LINK_GITHUB da um enter file open folder: seleciona tudo e apaga.
 
 - Espaçamentos a mais:  ---> echo "teste é **(&-n-b-s-p;)** testador"; (sem (teste) e - - -)
 
+- Para utilizar funções ou classes de outro arquivo e "importar" no que esta utilizando, utilizar **require_once** ---> **require_once** "./PessoaAbstract.php";
+
 ## VALORES E EXPRESSÕES ARITMÉTICAS
 
 - Para arredondar valores nos calculos: round (casas decimais) ---> $medharmonica = **round**($quantidadedeprovas / $mhdenominador, **2**);
@@ -157,4 +159,12 @@ git clone LINK_GITHUB da um enter file open folder: seleciona tudo e apaga.
 
  - Para adicionar uma função, utilize **function** ---> **function** imprimeTexto2($texto){(O que vai ser feito quando mencionar a função)}
 
- - 
+ - Para adicionar uma função ou identificar uma, ela será sempre iniciada com dois underlines (**__**) ---> public function __construct()
+
+ ## CLASSES:
+
+ - Para incluir uma classe, informe o nome iniciando com letra maiuscula utilizando a função padrão **class** --> class Cachorro {}
+
+ - Para adicionar o que é chamado de propriedades, utiliza a função padrão public, para adicionar "características" ou funções --> **public** $numero = 101 . **public** $classes = [] . **public** $luzLigada;
+
+ 
