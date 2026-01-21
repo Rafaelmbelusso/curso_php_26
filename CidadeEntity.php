@@ -11,5 +11,5 @@ class CidadeEntity extends EntityAbstract {
     {
         $this->tabelaNome = "cidade";
     }
-    
+
 } 

@@ -12,4 +12,3 @@ class EnderecoEntity extends EntityAbstract {
     }
 
 }
-
