@@ -13,9 +13,4 @@ class PessoaJuridica extends PessoaAbstract {
         $this->CNPJ = "";
     }
 
-    public function validar(){
-
-        $cnpj = $this->CNPJ;
-        $this-> validarCNPJ($cnpj);
-    }
 }
