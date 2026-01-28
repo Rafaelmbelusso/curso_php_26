@@ -14,8 +14,8 @@ interface EntityInterface {
 abstract class EntityAbstract implements EntityInterface {
 
     public $id;
-    public $criadoEm;
     public $tabelaNome;
+    public $criadoEm;
     public $atualizadoEm;
     public $usuarioAleracao;
 

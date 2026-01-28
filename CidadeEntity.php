@@ -4,7 +4,7 @@ require_once "./EntityAbstract.php";
 
 class CidadeEntity extends EntityAbstract {
 
-    public $cidade;
+    public $nome;
     public $codIbge;
 
     public function __construct()
