@@ -167,4 +167,47 @@ git clone LINK_GITHUB da um enter file open folder: seleciona tudo e apaga.
 
  - Para adicionar o que é chamado de propriedades, utiliza a função padrão public, para adicionar "características" ou funções --> **public** $numero = 101 . **public** $classes = [] . **public** $luzLigada;
 
- 
+
+ ## COMANDOS BANCO DE DADOS:
+
+
+- CREATE
+INSERT INTO usuario (nome, email, status, cadastros_preenchidos)
+VALUES
+('Fulano de tal', 'fulano@ciclano.com.br', 0, 0),
+('Beltrano de tal', 'beltrano@gmail.com.br', 0, 0);
+
+- READ
+  Select * FROM usuario
+
+ - READ (apenas 1)
+  Select * FROM usuario WHERE id = 3;
+
+ - UPDATE
+ Update usuario SET email="ariel@infoserv.com" WHERE id = 1;
+
+ - UPDATE (mais de 1)
+ update usuario SET status=true, cadastro_preenchido=true
+ WHERE id IN (1, 7);
+
+ - DELETE 
+ Delete FROM usuario WHERE id = 3;
+
+ - DELETE ( mais de 1)
+  Delete FROM usuario WHERE id IN = (3, 7);
+
+- Criar tabela
+ALTER TABLE usuario ADD column cadastro_preenchido bool default false;
+
+- Modificar tabela
+ALTER TABLE usuario MODIFY column cadastro_preenchido bool default false;
+
+- Excluir tabela
+ALTER TABLE usuario DROP column cadastro_preenchido bool default false;
+
+- Datas automáticas
+ALTER TABLE usuario DROP COLUMN criado_em;
+ALTER TABLE usuario ADD column criado_em DATETIME DEFAULT NULL ON INSERT current_timestamp;
+
+ALTER TABLE usuario DROP COLUMN atualizado_em;
+ALTER TABLE usuario ADD column criado_em DATETIME DEFAULT NULL ON INSERT current_timestamp;
