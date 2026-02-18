@@ -1,5 +1,6 @@
 <?php
 
+
 // CRUD - Creat, Read, Update and Delete.
 interface EntityInterface {
     public function criar();
@@ -18,13 +19,19 @@ abstract class EntityAbstract implements EntityInterface {
     public $criadoEm;
     public $atualizadoEm;
     public $usuarioAleracao;
+    public $bancoDeDads;
+
+    public function __construct(BancoDados $banco)
+    {
+        $this->bancoDeDados = $banco;
+    }
 
     public function criar() {
-
+        
     }
 
     public function obter($id) {
-
+        $sql = "SELECT * FROM $this->tabelaNome WHERE id = $id;";
     }
 
     public function obterTodos($filtros = "") {
@@ -32,11 +39,11 @@ abstract class EntityAbstract implements EntityInterface {
     }
 
     public function atualizar($id) {
-
+        $sql = "UPDATE SET $this->tabelaNome WHERE id = $id;";
     }
 
     public function deletar($id) {
-
+        $sql = "DELETE FROM $this->tabelaNome WHERE id = $id;";
     }
 
 }
