@@ -1,49 +1,54 @@
+
 <?php
 
-
-// CRUD - Creat, Read, Update and Delete.
+// CRUD - Create, Read, Update e Delete.
 interface EntityInterface {
     public function criar();
     public function obter($id);
     public function obterTodos($filtros = "");
     public function atualizar($id);
     public function deletar($id);
-
 }
 
-// Model || Entity, Representa a tabela do banco da programação
+// Model || Entity, Representa a tabela do banco na programacao.
 abstract class EntityAbstract implements EntityInterface {
-
     public $id;
     public $tabelaNome;
     public $criadoEm;
     public $atualizadoEm;
-    public $usuarioAleracao;
-    public $bancoDeDads;
+    public $usuarioAlteracao;
+    public $bancoDeDados;
 
-    public function __construct(BancoDados $banco)
+   public function __construct(BancoDados $banco)
     {
         $this->bancoDeDados = $banco;
     }
 
-    public function criar() {
-        
+    public function criar() 
+    {
+        $sql = "INSERT INTO $this->tabelaNome";
     }
 
-    public function obter($id) {
-        $sql = "SELECT * FROM $this->tabelaNome WHERE id = $id;";
+    public function obter($id) 
+    {
+        $sql = "SELECT * FROM $this->tabelaNome WHERE id = $id";
+        $this->bancoDeDados->execQuery($sql);
     }
 
-    public function obterTodos($filtros = "") {
-
+    public function obterTodos($filtros = "") 
+    {
+        $sql = "SELECT * FROM $this->tabelaNome";
+        return $this->bancoDeDados->execQuery($sql);
     }
 
-    public function atualizar($id) {
-        $sql = "UPDATE SET $this->tabelaNome WHERE id = $id;";
+    public function atualizar($id) 
+    {
+        $sql = "UPDATE FROM $this->tabelaNome WHERE id = $id";
     }
 
-    public function deletar($id) {
-        $sql = "DELETE FROM $this->tabelaNome WHERE id = $id;";
+    public function deletar($id) 
+    {
+        $sql = "DELETE FROM $this->tabelaNome WHERE id = $id";
     }
-
+    
 }

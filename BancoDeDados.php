@@ -1,14 +1,15 @@
+
 <?php
 
-class BancoDados{
+class BancoDados {
 
     private $conexao;
-
+    
     public function __construct($conexao)
     {
         $this->conexao= $conexao;
     }
-
+    
     public function fecharConexao()
     {
         $this->conexao->close();
@@ -17,12 +18,12 @@ class BancoDados{
     private function executar($sql)
     {
         $dados = [];
-        
+
         $isCreate = str_contains($sql, "INSERT");
         $isUpdate = str_contains($sql, "UPDATE");
 
         $result = $this->conexao->query($sql);
-
+        
         if ($isCreate) {
             return $this->conexao->insert_id;
         }
@@ -31,13 +32,13 @@ class BancoDados{
             return $this->conexao->affected_rows;
         }
 
-        $existeDados = $result->nu_rows > 0;
+        $existeDados = $result->num_rows > 0;
 
-        if (!$existeDados){
+        if (!$existeDados) {
             return $dados;
         }
 
-        while ($registro = $result->fetch_assoc()){
+        while ($registro = $result->fetch_assoc()) {
             $linha = (object) $registro;
             $dados[] = $linha;
         }
@@ -45,18 +46,15 @@ class BancoDados{
         return $dados;
     }
 
-    public function execQuery($sql, $msg = "Não foi possivel obter os dados."){
+    public function execQuery($sql, $msg = "Não foi possivel obter os dados.") {
 
         $sql .=";";
         $dados = $this->executar($sql);
 
-        if (empty($dados)){
-            throw new Exception ($msg);
+        if (empty($dados)) {
+            throw new Exception($msg);
         }
-
+        
         return $dados;
     }
-
 }
-
-$bancoDeDados = new BancoDados ($conexao);

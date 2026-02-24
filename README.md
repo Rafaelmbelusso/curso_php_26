@@ -171,43 +171,70 @@ git clone LINK_GITHUB da um enter file open folder: seleciona tudo e apaga.
  ## COMANDOS BANCO DE DADOS:
 
 
-- CREATE
-INSERT INTO usuario (nome, email, status, cadastros_preenchidos)
+- Retornar se o filtro for atendido
+select u.* from usuario as u
+inner join pessoa_fisica as pf 
+ON u.id = pf.usuario_alteracao;
+
+- Retornar tudo(usuario + Pessoa_fisica) se encontrar
+- Senao retorna os dados de usuario
+select u.* from usuario as u
+left join pessoa_fisica as pf 
+ON u.id = pf.usuario_alteracao;
+
+
+- Retornar tudo(Pessoa_fisica + usuario) se encontrar
+- senao retorna os dados da Pessoa_fisica
+select u.* from usuario as u
+right join pessoa_fisica as pf 
+ON u.id = pf.usuario_alteracao;
+
+
+- C Create (criar 1 usuario)
+INSERT INTO usuario (nome, email, status, cadastro_preenchido)
+VALUES ("Fulano de tal", "fulano@ciclano.com.br", false, false);
+
+- C Create (criar mais 1 de usuario)
+INSERT INTO usuario (nome, email, status, cadastro_preenchido)
 VALUES
 ('Fulano de tal', 'fulano@ciclano.com.br', 0, 0),
-('Beltrano de tal', 'beltrano@gmail.com.br', 0, 0);
+('Beltrano de tal', 'beltrano@ciclano.com.br', 0, 0);
 
-- READ
-  Select * FROM usuario
+- R read (todos usuarios)
+select * from usuario;
 
- - READ (apenas 1)
-  Select * FROM usuario WHERE id = 3;
+- R read Only (1 usuario)
+select * from usuario WHERE id = 3;
 
- - UPDATE
- Update usuario SET email="ariel@infoserv.com" WHERE id = 1;
+- U Update Only (1 usuario)
+Update usuario SET email="ariel@infoserv.com" WHERE id = 1;
 
- - UPDATE (mais de 1)
- update usuario SET status=true, cadastro_preenchido=true
- WHERE id IN (1, 7);
+- U Update (mais de 1 usuario)
+Update usuario SET status=true, cadastro_preenchido=true
+WHERE id IN (1, 2);
 
- - DELETE 
- Delete FROM usuario WHERE id = 3;
+- D Delete (Excluir 1 usuario)
+delete from usuario WHERE id = 3;
 
- - DELETE ( mais de 1)
-  Delete FROM usuario WHERE id IN = (3, 7);
+- D Delete (Excluir mais usuario)
+delete from usuario WHERE id IN (3, 7);
 
-- Criar tabela
+
+- ALTER TABLE
 ALTER TABLE usuario ADD column cadastro_preenchido bool default false;
 
-- Modificar tabela
-ALTER TABLE usuario MODIFY column cadastro_preenchido bool default false;
+ALTER TABLE usuario MODIFY column cadastro_preenchido bool NOT NULL default false;
 
-- Excluir tabela
-ALTER TABLE usuario DROP column cadastro_preenchido bool default false;
+ALTER TABLE usuario DROP column cadastro_preenchido;
 
-- Datas automáticas
+
+- DATAS AUTOMATICAS
+
 ALTER TABLE usuario DROP COLUMN criado_em;
-ALTER TABLE usuario ADD column criado_em DATETIME DEFAULT NULL ON INSERT current_timestamp;
+
+ALTER TABLE usuario ADD COLUMN criado_em DATETIME NOT NULL DEFAULT CURRENT_TIMESTAMP;
+
 
 ALTER TABLE usuario DROP COLUMN atualizado_em;
-ALTER TABLE usuario ADD column criado_em DATETIME DEFAULT NULL ON INSERT current_timestamp;
+
+ALTER TABLE usuario ADD COLUMN atualizado_em DATETIME DEFAULT NULL ON UPDATE CURRENT_TIMESTAMP;
